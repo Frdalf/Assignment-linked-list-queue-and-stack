@@ -7,7 +7,7 @@ public class LinkedListPasien {
         size = 0;
     }
 
-    // Tambah pasien di akhir list
+    // Tambah Pasien di Akhir List
     public void tambah(Pasien pasien) {
         Node newNode = new Node(pasien);
         if (head == null) {
@@ -22,7 +22,7 @@ public class LinkedListPasien {
         size++;
     }
 
-    // Hapus pasien berdasarkan ID
+    // Hapus Pasien Berdasarkan ID
     public boolean hapus(int id) {
         if (head == null) return false;
 

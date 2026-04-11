@@ -7,7 +7,7 @@ public class StackRiwayat {
         size = 0;
     }
 
-    // Push - simpan pasien yang sudah dipanggil ke riwayat
+    // Push - Simpan Pasien yang Sudah Dipanggil ke Riwayat
     public void push(Pasien pasien) {
         Node newNode = new Node(pasien);
         newNode.next = top;
@@ -30,7 +30,7 @@ public class StackRiwayat {
         return top.data;
     }
 
-    // Tampilkan riwayat dari terbaru ke terlama (LIFO)
+    // Tampilkan Riwayat dari Terbaru ke Terlama (LIFO)
     public void tampilkan() {
         if (isEmpty()) {
             System.out.println("  (Belum ada riwayat tindakan)");

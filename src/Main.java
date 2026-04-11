@@ -16,7 +16,7 @@ public class Main {
         System.out.println("║     Implementasi: LinkedList + Queue + Stack         ║");
         System.out.println("╚══════════════════════════════════════════════════════╝");
 
-        // Data awal untuk demo
+        // Data Awal untuk Demo
         demoDataAwal();
 
         boolean running = true;

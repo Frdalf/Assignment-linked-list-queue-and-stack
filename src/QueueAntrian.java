@@ -9,7 +9,7 @@ public class QueueAntrian {
         size = 0;
     }
 
-    // Enqueue - pasien masuk antrian (dari belakang)
+    // Enqueue - Pasien Masuk Antrian (dari Belakang)
     public void enqueue(Pasien pasien) {
         Node newNode = new Node(pasien);
         if (rear == null) {
@@ -38,7 +38,7 @@ public class QueueAntrian {
         return front.data;
     }
 
-    // Tampilkan antrian dari depan ke belakang
+    // Tampilkan Antrian dari Depan ke Belakang
     public void tampilkan() {
         if (isEmpty()) {
             System.out.println("  (Antrian kosong)");
