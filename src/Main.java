@@ -49,20 +49,20 @@ public class Main {
     }
 
     static void tampilkanMenu() {
-        System.out.println("\n┌─────────────────────────────────────────┐");
+        System.out.println("\n┌───────────────────────────────────────────────────────┐");
         System.out.printf( "│  Antrian: %-3d  |  Riwayat: %-3d  |  Total Pasien: %-3d │%n",
                 antrian.getSize(), riwayat.getSize(), daftarPasien.getSize());
-        System.out.println("├─────────────────────────────────────────┤");
-        System.out.println("│  [1] Daftar Pasien Baru                 │");
-        System.out.println("│  [2] Panggil Pasien Berikutnya          │");
-        System.out.println("│  [3] Lihat Antrian Saat Ini (Queue)     │");
-        System.out.println("│  [4] Lihat Semua Pasien (LinkedList)    │");
-        System.out.println("│  [5] Lihat Riwayat Tindakan (Stack)     │");
-        System.out.println("│  [6] Undo Panggilan Terakhir            │");
-        System.out.println("│  [7] Cari Pasien                        │");
-        System.out.println("│  [8] Hapus Pasien dari Data             │");
-        System.out.println("│  [0] Keluar                             │");
-        System.out.println("└─────────────────────────────────────────┘");
+        System.out.println("├─────────────────────────────────────────────────────────┤");
+        System.out.println("│  [1] Daftar Pasien Baru                                 │");
+        System.out.println("│  [2] Panggil Pasien Berikutnya                          │");
+        System.out.println("│  [3] Lihat Antrian Saat Ini (Queue)                     │");
+        System.out.println("│  [4] Lihat Semua Pasien (LinkedList)                    │");
+        System.out.println("│  [5] Lihat Riwayat Tindakan (Stack)                     │");
+        System.out.println("│  [6] Undo Panggilan Terakhir                            │");
+        System.out.println("│  [7] Cari Pasien                                        │");
+        System.out.println("│  [8] Hapus Pasien dari Data                             │");
+        System.out.println("│  [0] Keluar                                             │");
+        System.out.println("└─────────────────────────────────────────────────────────┘");
     }
 
     // ─── FITUR 1: Daftar Pasien Baru ───────────────────────────────
