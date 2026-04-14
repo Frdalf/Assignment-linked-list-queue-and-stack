@@ -1,4 +1,4 @@
-# 🏥 RS DIGITAL Queue Management System
+# 🏥 Hospital DIGITAL Queue Management System
 
 A simple hospital queue management system developed in Java to demonstrate the implementation and comparison of three fundamental data structures: **Linked List**, **Queue**, and **Stack**.
 
