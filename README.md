@@ -1,63 +1,94 @@
-# Sistem Antrian Rumah Sakit (RS DIGITAL)
+# 🏥 RS DIGITAL Queue Management System
 
-Sistem manajemen antrian rumah sakit sederhana yang dibangun dengan Java untuk mendemonstrasikan implementasi dan perbedaan penggunaan tiga struktur data fundamental: **Linked List**, **Queue**, dan **Stack**.
+A simple hospital queue management system developed in Java to demonstrate the implementation and comparison of three fundamental data structures: **Linked List**, **Queue**, and **Stack**.
 
-## 🚀 Fitur Utama
+---
 
-- **Pendaftaran Pasien Baru**: Menambahkan pasien ke database master dan antrian aktif sekaligus.
-- **Panggilan Pasien (FIFO)**: Memanggil pasien berikutnya sesuai urutan pendaftaran menggunakan prinsip *First-In-First-Out*.
-- **Undo Panggilan (LIFO)**: Membatalkan panggilan terakhir dan mengembalikan pasien ke antrian menggunakan prinsip *Last-In-First-Out*.
-- **Manajemen Data Master**: Melihat semua daftar pasien, mencari pasien berdasarkan nama, atau menghapus data pasien tertentu.
-- **Visualisasi Struktur Data**: Tampilan konsol yang informatif untuk memantau status Queue (Antrian) dan Stack (Riwayat).
+## 🚀 Key Features
 
-## 📊 Implementasi Struktur Data
+- **Patient Registration**  
+  Add new patients to both the master database and the active queue simultaneously.
 
-Proyek ini menggunakan implementasi struktur data kustom (bukan dari Java Collections Framework) untuk tujuan pembelajaran:
+- **Patient Calling (FIFO)**  
+  Call the next patient based on registration order using the *First-In-First-Out* principle.
 
-1.  **Linked List (`LinkedListPasien`)**: Berfungsi sebagai penyimpanan data utama (Master Data). Memungkinkan akses dan manipulasi data secara fleksibel seperti fitur pencarian dan penghapusan node.
-2.  **Queue (`QueueAntrian`)**: Mengelola antrian pasien yang menunggu. Memastikan pasien dilayani tepat waktu sesuai urutan kedatangan.
-3.  **Stack (`StackRiwayat`)**: Menyimpan riwayat panggilan pasien terbaru. Memungkinkan fitur *Undo* dengan mengambil data paling atas (panggilan terakhir).
+- **Undo Last Call (LIFO)**  
+  Cancel the most recent call and return the patient to the queue using the *Last-In-First-Out* principle.
 
-## 🛠️ Prasyarat
+- **Master Data Management**  
+  View all patients, search by name, and remove specific patient records.
 
-- Java Development Kit (JDK) 8 atau versi di atasnya.
+- **Data Structure Visualization**  
+  Informative console display to monitor the current state of the Queue (waiting list) and Stack (history).
 
-## 💻 Cara Menjalankan
+---
 
-1.  Clone repository ini:
-    ```bash
-    git clone https://github.com/username/repository-name.git
-    ```
-2.  Masuk ke direktori proyek:
-    ```bash
-    cd "Tugas 1 linked list stack and queue"
-    ```
-3.  Kompilasi file Java:
-    ```bash
-    javac src/*.java -d out
-    ```
-4.  Jalankan program:
-    ```bash
-    java -cp out Main
-    ```
+## 📊 Data Structure Implementation
 
-## 📝 Tampilan Menu
+This project uses **custom implementations** (not Java Collections Framework) for educational purposes:
 
-```text
+### 1. Linked List (`LinkedListPasien`)
+Acts as the main data storage (master data), allowing flexible operations such as searching and deleting nodes.
+
+### 2. Queue (`QueueAntrian`)
+Manages the patient queue, ensuring fair service order based on arrival time.
+
+### 3. Stack (`StackRiwayat`)
+Stores recent call history, enabling the *undo* feature by retrieving the most recent operation.
+
+---
+
+## 🛠️ Requirements
+
+- Java Development Kit (JDK) 8 or higher
+
+---
+
+## 💻 How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/username/repository-name.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd "Tugas 1 linked list stack and queue"
+   ```
+
+3. Compile the Java files:
+   ```bash
+   javac src/*.java -d out
+   ```
+
+4. Run the program:
+   ```bash
+   java -cp out Main
+   ```
+
+---
+
+## 🖥️ Menu Preview
+
+```
 ┌─────────────────────────────────────────┐
-│  Antrian: 4    |  Riwayat: 0    |  Total Pasien: 4   │
+│  Queue: 4   |  History: 0   |  Total Patients: 4   │
 ├─────────────────────────────────────────┤
-│  [1] Daftar Pasien Baru                 │
-│  [2] Panggil Pasien Berikutnya          │
-│  [3] Lihat Antrian Saat Ini (Queue)     │
-│  [4] Lihat Semua Pasien (LinkedList)    │
-│  [5] Lihat Riwayat Tindakan (Stack)     │
-│  [6] Undo Panggilan Terakhir            │
-│  [7] Cari Pasien                        │
-│  [8] Hapus Pasien dari Data             │
-│  [0] Keluar                             │
+│  [1] Register New Patient               │
+│  [2] Call Next Patient                  │
+│  [3] View Current Queue (Queue)         │
+│  [4] View All Patients (LinkedList)     │
+│  [5] View Action History (Stack)        │
+│  [6] Undo Last Call                     │
+│  [7] Search Patient                     │
+│  [8] Delete Patient Data                │
+│  [0] Exit                               │
 └─────────────────────────────────────────┘
 ```
 
 ---
-*Proyek ini dibuat untuk tugas mata kuliah Struktur Data - Semester 4.*
+
+## 📌 Notes
+
+- This project is built for educational purposes to understand how fundamental data structures work internally.
+- All data structures are implemented manually without using Java Collections Framework.
