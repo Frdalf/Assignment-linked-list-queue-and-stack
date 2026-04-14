@@ -71,19 +71,19 @@ Stores recent call history, enabling the *undo* feature by retrieving the most r
 ## 🖥️ Menu Preview
 
 ```
-┌─────────────────────────────────────────┐
+┌────────────────────────────────────────────────────┐
 │  Queue: 4   |  History: 0   |  Total Patients: 4   │
-├─────────────────────────────────────────┤
-│  [1] Register New Patient               │
-│  [2] Call Next Patient                  │
-│  [3] View Current Queue (Queue)         │
-│  [4] View All Patients (LinkedList)     │
-│  [5] View Action History (Stack)        │
-│  [6] Undo Last Call                     │
-│  [7] Search Patient                     │
-│  [8] Delete Patient Data                │
-│  [0] Exit                               │
-└─────────────────────────────────────────┘
+├────────────────────────────────────────────────────┤
+│  [1] Register New Patient                          │
+│  [2] Call Next Patient                             │
+│  [3] View Current Queue (Queue)                    │
+│  [4] View All Patients (LinkedList)                │
+│  [5] View Action History (Stack)                   │
+│  [6] Undo Last Call                                │
+│  [7] Search Patient                                │
+│  [8] Delete Patient Data                           │
+│  [0] Exit                                          │
+└────────────────────────────────────────────────────┘
 ```
 
 ---
